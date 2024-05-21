@@ -166,8 +166,8 @@ var GameList = (function(){
 }());
 
 
-var Game = function(w, b, gid){
-
+var Game = function(w, b, gid)
+{
 	var that = this,//reference in event functions
 		disconnected = false;
 
@@ -249,8 +249,6 @@ Game.prototype = {
 		});
 	}
 }
-
-
 
 //may need to add some securing to prevent thread accidents in the following method later
 io.sockets.on('connection', function (sk) {

@@ -1,9 +1,11 @@
-CHESSAPP.onlinePlay = {
+CHESSAPP.onlinePlay =
+{
 	sk : null,
 	/*
 	   connects to websocket server, and sets up events for when a matched player is found
 	   */
-	connect: function(stg, callback){
+	connect: function(stg, callback)
+{
 		var op = CHESSAPP.onlinePlay;
 		var hostPort = "http://localhost:" + CHESSAPP.globalSettings.port;
 		if(CHESSAPP.globalSettings.live){
